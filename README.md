@@ -11,14 +11,14 @@ Folder Structure
 mallorn_tde/
 │
 ├── data/
-│   ├── raw/              # Original Kaggle CSVs (do not edit)
-│   └── processed/        # Engineered feature tables
+│   ├── raw/         
+│   └── processed/        
 │
 ├── src/
-│   ├── 01_explore.py     # Data inspection & sanity checks
-│   ├── 02_features.py   # Feature engineering from lightcurves
-│   ├── 03_train.py      # Model training + threshold tuning
-│   └── 04_predict.py    # Test prediction & submission generation
+│   ├── 01_explore.py    
+│   ├── 02_features.py  
+│   ├── 03_train.py      
+│   └── 04_predict.py    
 │
 ├── submissions/
 │   └── submission_v1.csv
@@ -49,9 +49,3 @@ Only TDE classification (1) is evaluated
 Class imbalance is high → threshold tuning is essential
 
 --------------------------------------------------
-
-Notes
-
-- Kaggle only receives the final submission CSV
-- Feature engineering matters more than deep models
-- This structure is built for leaderboard stability
